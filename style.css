@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+}
+
+#dot {
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    position: absolute;
+    left: 500px;
+    top: 300px;
+    animation: grow 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    opacity: 0.8;
+    z-index: -1;
+    transition: 500ms;
+}
+
+@keyframes grow {
+    100% {
+        transform: scale(1000%);
+     }
+}
+
+#searchBar {
+    border: 1px solid grey;
+    box-shadow: 0px 0px 10px white;
+    height: 50px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 30%;
+    margin-top: 25%;
+    font-size: 1.3em;
+    padding-left: 10px;
+    z-index: 1000;
+}
+
+#searchBar:focus {
+    outline: none;
+}
