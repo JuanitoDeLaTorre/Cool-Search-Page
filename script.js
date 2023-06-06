@@ -37,6 +37,8 @@ document.addEventListener("click", () => {
 
   if (allDots.length > 10) {
     document.querySelectorAll("#dot")[0].style.opacity = "0";
+    document.querySelectorAll("#dot")[0].style.height = "0px";
+    document.querySelectorAll("#dot")[0].style.width = "0px";
     setTimeout(() => {
       document.querySelectorAll("#dot")[0].remove();
     }, 500);
